@@ -1,8 +1,14 @@
 <?php
-    // include __DIR__ . "/User.php";
+    include __DIR__ . "/User.php";
+    include __DIR__ . "/Userisc.php";
     include __DIR__ . "/Product.php";
     include __DIR__ . "/Food.php";
     include __DIR__ . "/Giochi.php";
+
+    //$utente1 = new User();
+    //$utenteIscritto1 = new Userisc();
+    //$utenteIscritto1->username = "Paolo";
+    // $utenteIscritto1->setSale(20);
 
     $food1 = new Food("Food 1", 20, 3);
     $food1->name = "Croccantini";
@@ -26,6 +32,7 @@
     <title>Shop</title>
 </head>
 <body>
+    
     <h3><?php echo $gioco1->name?></h3>
     <div>Categoria: <?php echo $gioco1->categoria?></div>
     <div>Dimensione: <?php echo $gioco1->dimensione?> cm</div>
